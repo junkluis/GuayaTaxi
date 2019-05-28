@@ -12,9 +12,9 @@ public class NuevoChofer {
 
     @Test
     public void choferJoven() {
-        boolean chofer_valido = MainActivity.VerificarChofer( "Luis Zuniga",
-                                                                "GYZ1234",
-                                                                     "Nissan",
+        boolean chofer_valido = MainActivity.VerificarChofer( "Luis Zuñiga",
+                                                                "PYZ3234",
+                                                                     "Niísan",
                                                                  25,
                                                                       "Sanborondon");
         assertTrue(chofer_valido);
@@ -22,11 +22,10 @@ public class NuevoChofer {
 
     @Test
     public void SueldoChoferJoven() {
-        double sueldo_taxista = MainActivity.CalcularSueldoChofer("GYZ1234",
+        double sueldo_taxista = MainActivity.CalcularSueldoChofer("GYÁ1234",
                                                                     25,
                                                                         "Samborondon");
-        assertEquals(300, sueldo_taxista, 2);
+        assertEquals(270, sueldo_taxista, 2);
     }
-
 
 }
