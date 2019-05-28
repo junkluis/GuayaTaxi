@@ -28,5 +28,8 @@ public class NuevoChofer {
         assertEquals(300, sueldo_taxista, 2);
     }
 
+    @Test
+    public void ingresarnombre() {
+
 
 }
