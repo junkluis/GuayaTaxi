@@ -25,8 +25,25 @@ public class NuevoChofer {
         double sueldo_taxista = MainActivity.CalcularSueldoChofer("GYZ1234",
                                                                     25,
                                                                         "Samborondon");
-        assertEquals(300, sueldo_taxista, 2);
+        assertEquals(270, sueldo_taxista, 2);
     }
 
+    @Test
+    public void SueldoSueldoTExpSur() {
+        double sueldo_esperado = 300;
+        double sueldo_real = MainActivity.CalcularSueldoChofer( "PED5623",
+                32,
+                "Sur");
+        assertEquals( sueldo_esperado, sueldo_real);
+    }
+
+    @Test
+    public void SueldoSueldoTExp() {
+        double sueldo_esperado = 300;
+        double sueldo_real = MainActivity.CalcularSueldoChofer( "PED5623",
+                32,
+                "Sur");
+        assertEquals( sueldo_esperado, sueldo_real);
+    }
 
 }
