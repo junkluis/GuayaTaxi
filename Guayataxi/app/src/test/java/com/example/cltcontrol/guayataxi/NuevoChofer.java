@@ -11,21 +11,42 @@ import static org.junit.Assert.*;
 public class NuevoChofer {
 
     @Test
-    public void choferJoven() {
-        boolean chofer_valido = MainActivity.VerificarChofer( "Luis Zuniga",
-                                                                "GYZ1234",
+    public void choferJovenCP1() {
+        boolean chofer_valido = MainActivity.VerificarChofer( "Luis",
+                                                                "PYZ1234",
+                                                                     "Nissan",
+                                                                 25,
+                                                                      "Sanborondon");
+        assertTrue(chofer_valido);
+
+    }
+
+    @Test
+    public void choferJovenCP2() {
+        boolean chofer_valido = MainActivity.VerificarChofer( "Luis R",
+                                                                "PYZ1234",
                                                                      "Nissan",
                                                                  25,
                                                                       "Sanborondon");
         assertTrue(chofer_valido);
     }
 
+
+
     @Test
-    public void SueldoChoferJoven() {
-        double sueldo_taxista = MainActivity.CalcularSueldoChofer("GYZ1234",
-                                                                    25,
+    public void SueldoChoferJovenCP1() {
+        double sueldo_taxista = MainActivity.CalcularSueldoChofer("RYZ1234",
+                                                                    24,
                                                                         "Samborondon");
-        assertEquals(300, sueldo_taxista, 2);
+        assertEquals(252, sueldo_taxista, 2);
+    }
+
+    @Test
+    public void SueldoChoferJovenC2() {
+        double sueldo_taxista = MainActivity.CalcularSueldoChofer("RYZ1234",
+                                                                    55,
+                                                                        "Samborondon");
+        assertEquals(297, sueldo_taxista, 2);
     }
 
 
