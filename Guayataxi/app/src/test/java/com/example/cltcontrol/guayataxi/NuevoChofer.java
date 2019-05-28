@@ -77,9 +77,9 @@ public class NuevoChofer {
     @Test
     public void CP6() {
         double sueldo_taxista = MainActivity.CalcularSueldoChofer("GYZ1234",
-                24,
-                "Norte");
-        assertEquals(300, sueldo_taxista, 2);
+                25,
+                "Milagro");
+        assertEquals(null, sueldo_taxista);
     }
 
 }
