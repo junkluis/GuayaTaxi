@@ -1,0 +1,2 @@
+VerificarChofer() | Verifica si los datos son válidos
+        CalcularSueldoChofer() | Calcula el sueldo del chofer
